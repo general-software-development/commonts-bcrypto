@@ -1,0 +1,19 @@
+{
+  "name": "bcrypto",
+  "version": "1.0.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "imports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src/**/*"
+  ]
+}
