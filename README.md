@@ -25,8 +25,8 @@ Constructing an EJWT token requires:
 * `prefix: string` &mdash; a prefix for the token, to identify your application
 * `data: JSONEncodable` &mdash; JSON-encodable data to encode in the token
 * `aad: JSONEncodable` &mdash; any additional AAD to pass to the encryption function
-* `secret: string` &mdash; a secret, of any length
-* `nonce?: string` &mdash; a random string, optional
+* `secret: string` &mdash; a secret, of any length. Will be hashed with `SHA2-256`.
+* `nonce?: string` &mdash; a random string, optional. Will be hashed with `MD5`.
 
 The format will consist of 6 elements:
 
