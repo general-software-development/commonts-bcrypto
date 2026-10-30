@@ -42,7 +42,7 @@ export class EJWT {
 
     static async load(token: string, secret: string): Promise<EJWT> {
         const parts = token.split('::');
-        if (parts[0] !== 'EJWT' || parts.length !== 5) {
+        if (parts[0] !== 'EJWT' || parts.length !== 6) {
             throw new Error("Attempted to load an EJWT token, that isn't an EJWT token.");
         }
 
